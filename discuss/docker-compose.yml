@@ -13,6 +13,8 @@ services:
   app:
     container_name: discuss
     build: .
+    env_file:
+      - .env
     ports:
       - "4000:4000"
     depends_on:
