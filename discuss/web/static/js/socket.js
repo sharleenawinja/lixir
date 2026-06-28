@@ -64,4 +64,8 @@ channel
     console.log("Unable to join", resp);
   });
 
+document.querySelector("button").addEventListener("click", function () {
+  channel.push("comment:hello", { hi: "there!" });
+});
+
 export default socket;
